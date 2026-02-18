@@ -10,11 +10,8 @@ dependencies = [
   "uvicorn[standard]>=0.30",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
   "ruff>=0.6",
+  "pytest>=9.0.2",
 ]
-
-[build-system]
-requires = ["setuptools>=69"]
-build-backend = "setuptools.build_meta"
