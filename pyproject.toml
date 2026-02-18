@@ -1,17 +1,20 @@
 [project]
 name = "pc-builder"
 version = "0.1.0"
-description
-readme = "README.MD"
+description = "PC-Builder Backend (FastAPI)"
+readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-
+  "fastapi>=0.110",
+  "pydantic>=2.7",
+  "uvicorn[standard]>=0.30",
 ]
 
-[project dependencies]
+[project.optional-dependencies]
 dev = [
-
+  "ruff>=0.6",
 ]
+
 [build-system]
-requires = 
-build-backend = 
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
