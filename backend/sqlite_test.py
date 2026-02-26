@@ -1,3 +1,6 @@
+# python -c "import sqlite3; c=sqlite3.connect('backend/test.db'); print(c.execute('SELECT * FROM test_items').fetchall())"
+# Run the above command in root terminal.
+
 import sqlite3
 from pathlib import Path
 
