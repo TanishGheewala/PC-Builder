@@ -15,8 +15,11 @@ PC Builder is a website that takes in a user's budget, preferences, and use case
 - Build templates.
 
 ## Setup Development Environment
-Run these in Powershell, inside VSCode, in the root directory of the cloned repo (in Windows).
-Run git pull for the latest version.
+
+### Prerequisites
+- VS Code with the PowerShell terminal
+- This repository cloned locally
+- Python installed matching the version in `.python-version`
 
 ### Setup Pre-Commit
 ```powershell
