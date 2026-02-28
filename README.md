@@ -17,9 +17,9 @@ PC Builder is a website that takes in a user's budget, preferences, and use case
 ## Setup Development Environment
 
 ### Prerequisites
-- VS Code with the PowerShell terminal
-- This repository cloned locally
-- Python installed matching the version in `.python-version`
+- VS Code with an integrated PowerShell terminal.
+- This repository cloned locally.
+- Python installed matching `.python-version`.
 
 ### Setup Pre-Commit
 ```powershell
