@@ -1,0 +1,4 @@
+Authentication related README changes:
+
+new:
+uv pip install python-jose[cryptography] passlib[bcrypt]
