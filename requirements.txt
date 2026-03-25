@@ -1,0 +1,10 @@
+The most up-to-date information about our virtual environment dependencies can be found in README.md and pyproject.toml.
+Legacy List:
+FastAPI
+Pydantic
+Uvicorn
+SQLAlchemy
+python-jose
+passlib
+Ruff
+pytest
