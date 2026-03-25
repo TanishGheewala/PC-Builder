@@ -4,6 +4,7 @@ from typing import Any
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 
+# Change these:
 SECRET_KEY = "testkey"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60
