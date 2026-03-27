@@ -53,6 +53,7 @@ uv venv
 
 uv pip install -e ./backend
 ```
+In VS Code, make sure the Python interpreter is set to the one in .venv\scripts\activate
 
 ### Run Sample Frontend
 - Run `python -m http.server 3000`
