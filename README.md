@@ -24,9 +24,13 @@ PC Builder is a website that takes in a user's budget, preferences, and use case
 | Backend | FastAPI + Pydantic |
 | Database | SQLAlchemy |
 | Server | Uvicorn |
-| Code Quality | Ruff + pre-commit |
+| Authentication | Python-Jose + Passlib (JWT) |
+| Middleware | CORS + Logging |
+| Code Quality | Ruff + Pre-Commit |
 
 ## Setup Development Environment
+
+List of virtual enviroment dependencies can be found in `pyproject.toml`.
 
 ### Prerequisites
 - VS Code with an integrated PowerShell terminal.
@@ -55,6 +59,10 @@ uv pip install -e ./backend
 ```
 In VS Code, make sure the Python interpreter is set to the one in .venv\scripts\activate
 
-### Run Sample Frontend
-- Run `python -m http.server 3000`
-- Open http://localhost:3000/ and click frontend/
+### Authentication
+- `python-jose` for JWT creation/verification.
+- `passlib` for password hashing.
+
+### Middleware
+- CORS to allow the frontend to connect with the backend.
+- Request logging.
