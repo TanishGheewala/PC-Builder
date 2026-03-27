@@ -1,0 +1,20 @@
+[project]
+name = "pc-builder"
+version = "0.1.0"
+description = "PC-Builder Backend (FastAPI)"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "fastapi>=0.110",
+  "pydantic>=2.7",
+  "sqlalchemy>=2.0",
+  "uvicorn[standard]>=0.30",
+  "python-jose[cryptography]>=3.3.0",
+  "passlib[bcrypt]>=1.7.4",
+]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.6",
+  "pytest>=9.0.2",
+]
