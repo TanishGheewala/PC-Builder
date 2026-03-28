@@ -9,6 +9,10 @@ class CategoryCreate(CategoryBase):
     user_id: int
 
 
+class CategoryUpdate(BaseModel):
+    name: str | None = None
+
+
 class CategoryResponse(CategoryBase):
     id: int
 
