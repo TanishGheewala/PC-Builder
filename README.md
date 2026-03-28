@@ -66,3 +66,51 @@ In VS Code, make sure the Python interpreter is set to the one in .venv\scripts\
 ### Middleware
 - CORS to allow the frontend to connect with the backend.
 - Request logging.
+
+
+## Running the Backend
+After creating and activating the virtual environment and installing dependencies, run the backend from the project root with:
+
+```bash
+PYTHONPATH=backend/src python -m uvicorn backend.main:app --reload
+```
+
+Once the server is running, open:
+
+- `http://127.0.0.1:8000/docs` for Swagger UI
+- `http://127.0.0.1:8000/` for the root endpoint
+
+## Testing the API
+
+### Manual API Testing
+The API endpoints were tested using Swagger UI and `curl`.
+
+Verified endpoints include:
+- `GET /`
+- `POST /auth/register`
+- `POST /auth/login`
+- `GET /auth/me`
+- `GET /users/`
+- `GET /users/{id}`
+- `PUT /users/{id}`
+- `DELETE /users/{id}`
+- `GET /categories/`
+- `POST /categories/`
+- `GET /transactions/`
+- `POST /transactions/`
+
+### Automated Tests
+Pytest tests are located in:
+
+- `backend/tests/test_auth_and_users.py`
+- `backend/tests/test_categories_and_transactions.py`
+
+Run all backend tests with:
+
+```bash
+PYTHONPATH=backend/src python -m pytest backend/tests/test_auth_and_users.py backend/tests/test_categories_and_transactions.py -v
+
+Save it, then run:
+
+```bash
+git status --short
